@@ -5,28 +5,28 @@
 Baixe o Android Studio:
   [https://developer.android.com/studio](https://developer.android.com/studio)
 
-Após a instalação, [crie um emulador](https://developer.android.com/studio/run/managing-avds.html?hl=pt-br) através do AVD Manager do Android Studio `tools > AVD Manager`  (na aba x86 selecione algum que seja **x86, x64**)
+ApÃ³s a instalaÃ§Ã£o, [crie um emulador](https://developer.android.com/studio/run/managing-avds.html?hl=pt-br) atravÃ©s do AVD Manager do Android Studio `tools > AVD Manager`  (na aba x86 selecione algum que seja **x86, x64**)
 
-## Variáveis de ambiente
+## VariÃ¡veis de ambiente
 
-Procure pelo SDK do Android. Se a instação do Android Studio foi padrão. provavelmente o caminho do SDK será: `C:\Users\USERNAME\AppData\Local\Android\Sdk
+Procure pelo SDK do Android. Se a instaÃ§Ã£o do Android Studio foi padrÃ£o. provavelmente o caminho do SDK serÃ¡: `C:\Users\USERNAME\AppData\Local\Android\Sdk
 `
 
-Após localizar o caminho do SDK, inclua o caminho das seguintes pastas nas **variáveis de ambiente** do seu computador:
+ApÃ³s localizar o caminho do SDK, inclua o caminho das seguintes pastas nas **variÃ¡veis de ambiente** do seu computador:
 
  1. `.../platform-tools`
  2. `.../emulator`
 
 ### Emulador
 Para abrir o emulador sem abrir o Android Studio, execute o comando:
-`emulator -avd nome_do_emulador` (Lembrando que o nome do emulador você configura no Android Studio, no momento de criação do mesmo)
+`emulator -avd nome_do_emulador` (Lembrando que o nome do emulador vocÃª configura no Android Studio, no momento de criaÃ§Ã£o do mesmo)
 
-Caso não se lembre do nome que colocou, rode o comando `emulator -list-avds`
+Caso nÃ£o se lembre do nome que colocou, rode o comando `emulator -list-avds`
 
 
-## Instalação
+## InstalaÃ§Ã£o
 
-Você precisará instalar: 
+VocÃª precisarÃ¡ instalar: 
 
  1. [Node
 ](https://nodejs.org/)
@@ -36,7 +36,7 @@ Você precisará instalar:
 Na pasta do projeto execute o comando:
 `yarn`
 
-Dentro do diretório `/android` crie um arquivo com o nome `local.properties` com as seguintes informações:
+Dentro do diretÃ³rio `/android` crie um arquivo com o nome `local.properties` com as seguintes informaÃ§Ãµes:
 `sdk.dir = C:/Users/USER_NAME/AppData/Local/Android/Sdk`
 
 Abra o terminal e execute o comando:
@@ -50,7 +50,7 @@ Em outra aba do terminal, execute o comando:
 ## Reactotron
 
 Pra conseguir utilizar o [Reactotron](https://github.com/infinitered/reactotron), execute o seguinte comando:
-`adb reverse_ tcp:_9090_ tcp:_9090`
+`adb reverse tcp:9090 tcp:9090`
 
 
 
